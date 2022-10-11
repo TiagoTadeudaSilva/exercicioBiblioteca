@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo-biblioteca.css">
+    
+    
+</head>
+<body>
+
+    <div class="container">
+            <div class="container-geral cadastro-livros">
+                <h2>Cadastro de Livros</h2>
+                
+                <form>
+                    <label for="livro">Livro:</label>
+                    <input type="text" id="livro"> <br><br>
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor"> <br><br>
+                    <label for="edicao">Edição:</label>
+                    <input type="text" id="edicao"> <br><br>
+
+                    <button type="button" onclick="cadastrar()">Cadastrar livro</button>
+                </form>
+
+            </div>
+
+            <div class=" container-geral mostruario">
+                
+                <table class="tabela">
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Autor</th>
+                        <th>Edição</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody-livros">
+                    </tbody>
+                  </table>
+
+                
+            </div>
+
+            
+            
+            <div class="container-geral livros-alugados">
+              <table class="tabela">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Autor</th>
+                    <th>Edição</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-livros2">
+                </tbody>
+              </table>
+            </div>
+
+    </div>
+
+
+    <!--O JS DEVE SER IMPORTADO AO FINAL DO CODIGO-->
+    <script src="biblioteca.js"></script>
+</body>
+</html>
